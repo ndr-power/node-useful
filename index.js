@@ -27,3 +27,7 @@
     arr.forEach(val => newarr[val.name] = val.value )
     return newarr
 }
+
+difference = _.filter(newSizes, function(obj) {
+                return !_.findWhere(oldSizes, obj);
+            })
